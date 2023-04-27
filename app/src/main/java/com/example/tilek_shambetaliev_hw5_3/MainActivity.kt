@@ -30,8 +30,10 @@ class MainActivity : AppCompatActivity() {
 
             }
             btnSearch.setOnClickListener {
-                requestImages(page)
+                page=1
                 adapter.list.clear()
+                requestImages(page)
+
             }
         }
     }
